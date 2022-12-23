@@ -1,6 +1,186 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../font/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../font/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 body {
   margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  font-family: "Roboto";
+}
+
+p, a {
+  font-family: "Roboto-Light";
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+.directionRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.directionColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin: 0;
+  padding: 20px 0 10px 0;
+  box-shadow: 0 0 5px 0 grey;
+  position: relative;
+  z-index: 1;
+}
+
+.logo, nav h4 {
+  display: flex;
+  justify-content: center;
+}
+.logo img, nav h4 img {
+  width: 60%;
+}
+
+nav {
+  position: relative;
+  z-index: auto;
+}
+
+.location {
+  padding: 5px 0 5px 0;
+  margin: 0 0 0 0;
+  font-family: "Roboto-Light";
+  background-color: #EAEAEA;
+}
+.location i {
+  margin-right: 10px;
+}
+
+.nav {
+  background-color: #F6F6F6;
+  padding: 5px 0 40px 0;
+  text-align: center;
+}
+.nav_button {
+  width: 60%;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: inherit;
+  color: white;
+  font-family: "Roboto-Light";
+  border-radius: 25px;
+  padding: 15px 0 15px 0;
+  box-shadow: 0 2px 10px 0px grey;
+  background: linear-gradient(177deg, #ff79DA, #9356DC);
+}
+.nav_button:hover {
+  opacity: 0.5;
+}
+
+.fonctionnement {
+  margin: 50px 0 0 20px;
+}
+.fonctionnement div {
+  width: 90%;
+  margin: 20px 0 0 10px;
+  padding: 10px 0 10px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  box-shadow: 0 0 10px 0 #D2D2D2;
+  border-radius: 20px;
+}
+.fonctionnement div i {
+  position: relative;
+  left: 0;
+  width: auto;
+  margin-right: 5px;
+}
+@media screen and (min-width: 400px) {
+  .fonctionnement div i {
+    margin-right: 40px;
+  }
+}
+.fonctionnement div .icon-number {
+  position: absolute;
+  left: 1%;
+  margin-top: 0;
+  text-align: center;
+  color: white;
   background-color: #9356DC;
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.restaurants {
+  margin: 50px 0 0 0;
+  padding: 50px 30px 15px 30px;
+  background-color: #F6F6F6;
+}
+.restaurants div {
+  width: 100%;
+  margin: 20px 0 40px 0;
+  padding: 0 0 10px 0;
+  position: relative;
+  left: auto;
+  right: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 #D2D2D2;
+}
+.restaurants img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.restaurants h2 {
+  margin: 0 0 50px 0;
+}
+.restaurants h3, .restaurants p {
+  margin: 10px 0 0 20px;
+}
+.restaurants i {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  opacity: 1;
+}
+.restaurants i:hover {
+  opacity: 0;
+}
+.restaurants .icon-hover {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  opacity: 0;
+}
+.restaurants .icon-hover:hover {
+  opacity: 1;
+  background: -webkit-linear-gradient(#9356DC, #ff79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
