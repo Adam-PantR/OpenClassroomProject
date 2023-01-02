@@ -170,6 +170,11 @@ nav {
 .restaurants i:hover {
   opacity: 0;
 }
+.restaurants div a {
+  color: black;
+  font-style: none;
+  text-decoration: none;
+}
 .restaurants .icon-hover {
   position: absolute;
   right: 20px;
